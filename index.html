@@ -1,0 +1,937 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azzle - AI Technology & Startup HTML Template</title>
+    <meta name="description" content="AIMass Tailwind based SASS Template" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Development -->
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/hero.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/price.css">
+  </head>
+
+  <body>
+    <div class="page-wrapper relative z-[1] bg-white">
+      <header
+        class="site-header site-header--absolute py-3 bg-white"
+        id="sticky-menu"
+      >
+        <nav
+          class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Azzle</span>
+              <img class="w-auto" src="./assets/images/logo-dark.png" alt="" />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a
+              href="/about"
+              class="text-base font-semibold leading-6 text-gray-900"
+              >About</a
+            >
+
+            <div class="relative">
+              <button
+                type="button"
+                class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+                aria-expanded="false"
+              >
+                Service
+                <i class="fa-solid fa-chevron-down text-sm text-gray-500"></i>
+              </button>
+              <div
+                class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-layer-group group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Service Categories
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-circle-info group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Service Details
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <button
+                type="button"
+                class="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900"
+                aria-expanded="false"
+              >
+                Pages
+                <i class="fa-solid fa-chevron-down text-sm text-gray-500"></i>
+              </button>
+              <div
+                class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-blog group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Blogs
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-user-plus group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Teams
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-question group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        FAQ
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-file group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Portfolio
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-barcode group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Pricing
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Build strategic funnels that will convert
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                    id="utilities-menu-item"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-gear group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        Utilities
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        Enhance your workflow with powerful tools
+                      </p>
+                    </div>
+                    <div>
+                      <svg
+                        class="h-5 w-5 flex-none text-gray-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Utilities submenu -->
+              <div
+                id="utilities-submenu"
+                class="hidden absolute -left-8 -right-[calc(100%-16px)] top-0 z-20 mt-3 w-screen max-w-xs overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              >
+                <div class="p-4">
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-exclamation-triangle group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/error-404"
+                        class="block font-semibold text-gray-900"
+                      >
+                        Error 404
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">Handle errors gracefully</p>
+                    </div>
+                  </div>
+                  <div
+                    class="group relative flex items-center gap-x-6 rounded-lg p-4 text-base leading-6 hover:bg-gray-50"
+                  >
+                    <div
+                      class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    >
+                      <i
+                        class="fa-solid fa-key group-hover:text-orange-600"
+                      ></i>
+                    </div>
+                    <div class="flex-auto">
+                      <a
+                        href="/reset-password"
+                        class="block font-semibold text-gray-900"
+                      >
+                        Reset Password
+                        <span class="absolute inset-0"></span>
+                      </a>
+                      <p class="mt-1 text-gray-600">Recover user accounts</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="/contact"
+              class="text-base font-semibold leading-6 text-gray-900"
+              >Contact</a
+            >
+          </div>
+          <div class="gap-5 hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="#"
+              class="button border-[#7F8995] bg-transparent after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white rounded-[50px] text-base font-semibold leading-6 text-gray-900"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="button border-[#7F8995] bg-black after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white rounded-[50px] text-base font-semibold leading-6 text-white"
+              >Sign up</a
+            >
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-10"></div>
+          <div
+            class="menu-block fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 ease-in-out duration-300 animation"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img
+                  class="w-auto"
+                  src="./assets/images/logo-dark.png"
+                  alt=""
+                />
+              </a>
+              <button
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                    >About</a
+                  >
+                  <div class="-mx-3">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                      aria-controls="disclosure-1"
+                      aria-expanded="true"
+                    >
+                      Service
+                      <svg
+                        class="h-5 w-5 flex-none"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >Service Categories</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >Service Details</a
+                      >
+                    </div>
+                  </div>
+                  <div class="-mx-3">
+                    <button
+                      type="button"
+                      class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                      aria-controls="disclosure-2"
+                      aria-expanded="true"
+                    >
+                      Pages
+                      <svg
+                        class="h-5 w-5 flex-none"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <div class="mt-2 space-y-2 hidden" id="disclosure-2">
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >Blogs</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >Teams</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >FAQ</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >Portfolio</a
+                      >
+                      <a
+                        href="#"
+                        class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        >Pricing</a
+                      >
+                      <button
+                        type="button"
+                        class="flex w-full items-center justify-between rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                        aria-controls="sub-disclosure-1"
+                        aria-expanded="true"
+                      >
+                        Utilities
+                        <svg
+                          class="h-5 w-5 flex-none"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                      <div class="mt-2 space-y-2 hidden" id="sub-disclosure-1">
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pl-10 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                          >Error 404</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pl-10 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                          >Reset Password</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="#"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                    >Contact</a
+                  >
+                </div>
+                <hr class="bg-orange-600" />
+              </div>
+              <div class="py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                  >Log in</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:text-orange-600 hover:bg-gray-50"
+                  >Sign up</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-wrapper relative overflow-hidden">
+        <!-- Hero Section -->
+        <section id="section-hero">
+          <!-- Section Space -->
+          <div
+            class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-[#EFEAE3] pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]"
+          >
+            <!-- Section Container -->
+            <div class="container">
+              <!-- Hero Content -->
+              <div
+                class="mb-14 flex flex-col items-center text-center lg:mb-20"
+              >
+                <h1
+                  class="slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px] fade-up duration-300 animation"
+                >
+                  Simplify your SaaS solution with AI
+                </h1>
+                <p
+                  class="slide-from-bottom mb-11 max-w-[715px] text-lg font-semibold sm:text-xl xl:max-w-[980px] animation duration-300 fade-up"
+                >
+                  Our AI SAAS tool is a cloud-based software delivery model. It
+                  helps businesses forecast demand for products and services and
+                  optimize inventory management and supply chain operations.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 fade-down duration-300 animation">
+                  <a
+                    href="#"
+                    class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white"
+                  >
+                    Get Started
+                  </a>
+                  <a
+                    href="#"
+                    class="button rounded-[50px] border-2 border-black bg-transparent py-4 text-black after:bg-[#FE330A] hover:border-[#FE330A] hover:text-white"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+
+              <!-- Hero Image -->
+              <div class="hero-img overflow-hidden rounded-2xl bg-black zoom duration-300 animation">
+                <img
+                  src="./assets/images/hero-dashboard.jpg"
+                  alt="hero-dashboard"
+                  width="1296"
+                  height="640"
+                  class="h-auto w-full"
+                />
+              </div>
+              <hr class="my-10 h-[1px] w-full bg-[#FE330A] lg:my-16 xl:my-20" />
+              <div class="mx-auto mb-12 max-w-[715px] text-center lg:mb-16 fade-up duration-300 animation">
+                <p class="text-lg">
+                  Companies of all sizes trust us to find AI SaaS critical to
+                  their growth and innovation
+                </p>
+              </div>
+              <!-- Swiper Container -->
+              <div class="swiper brand-slider fade-in duration-300 animatiion">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="swiper-content rounded-2xl flex justify-center items-center"
+                    >
+                      <img
+                        src="./assets/images/slider/brand-1.png"
+                        alt=""
+                        class="swiper-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="swiper-content rounded-2xl flex justify-center items-center"
+                    >
+                      <img
+                        src="./assets/images/slider/brand-2.png"
+                        alt=""
+                        class="swiper-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="swiper-content rounded-2xl flex justify-center items-center"
+                    >
+                      <img
+                        src="./assets/images/slider/brand-3.png"
+                        alt=""
+                        class="swiper-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="swiper-content rounded-2xl flex justify-center items-center"
+                    >
+                      <img
+                        src="./assets/images/slider/brand-4.png"
+                        alt=""
+                        class="swiper-logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="swiper-content rounded-2xl flex justify-center items-center"
+                    >
+                      <img
+                        src="./assets/images/slider/brand-5.png"
+                        alt=""
+                        class="swiper-logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Hero Background -->
+            <div
+              class="absolute bg-orange-1 gradient -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]"
+            ></div>
+            <div
+              class="absolute bg-orange-2 gradient right-[40px] top-[620px] -z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]"
+            ></div>
+          </div>
+        </section>
+        <!-- End Hero Secion -->
+         <!-- Service Section -->
+        <section class="section-service">
+            <!-- Section Space -->
+            <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px] ">
+              <!-- Section Container -->
+               <div class="container">
+                <!-- Serivce Content -->
+                 <div class="mb-10 lg:mb-16 xl:mb-20 fade-up duration-300 animation">
+                  <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px] ">
+                    <h2>Core features that make it valuable</h2>
+                  </div>
+                 </div>
+                 <!-- Service List -->
+                  <ul class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4 fade-up duration-300 animation">
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./assets/images/service/service-icon-black-1.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="./assets/images/service/service-icon-orange-1.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Resource Flexibility
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="./assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="./assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./assets/images/service/service-icon-black-2.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="./assets/images/service/service-icon-orange-2.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Managed Services
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="./assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="./assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./assets/images/service/service-icon-black-3.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="./assets/images/service/service-icon-orange-3.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Web-Based Access
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="./assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="./assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                    <li class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                      <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./assets/images/service/service-icon-black-4.svg" alt="service-icon-black-" width="70px" height="70px">
+                        <img src="./assets/images/service/service-icon-orange-4.svg" alt="service-icon-orange-" width="70px" height="70px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </div>
+                      <h3 class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                        <a href="/service-details" class="hover:text-[#FE330A]">
+                          Complexity Reduction
+                        </a>
+                      </h3>
+                      <p class="mb-12 duration-300 group-hover:text-white">
+                        This is an excellent option for people & small businesses
+                        who are starting out.
+                      </p>
+                      <a href="/service-details" class="relative inline-block h-[30px] w-[30px]">
+                        <img src="./assets/images/service/arrow-right-black.svg" alt="arrow-right" width="30px" height="30px">
+                        <img src="./assets/images/service/arrow-right-orange.svg" alt="arrow-right" width="30px" height="30px" class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100">
+                      </a>
+                    </li>
+                  </ul>
+
+               </div>
+
+            </div>
+        </section>
+        <!-- End Service Section -->
+        <!-- Content Sections -->
+        <!-- Content Section 1 -->
+        <section id="section-content-1">
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="container">
+              <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
+                <!-- Content Left Block -->
+                <div class="order-2 overflow-hidden rounded-md md:order-1 fade-left duration-300 animation">
+                        <img src="./assets/images/content/content-image-1.jpg" alt="content-image-1" width="526" height="450" class="h-auto w-full">
+                    </div>
+                    <!-- Content Left Block -->
+                    <!-- Content Right Block -->
+                    <div class="order-1 md:order-2 fade-right duration-300 animation">
+                        <!-- Section Content Block -->
+                        <div class="mb-6">
+                            <h2>Accessible to a wider audience</h2>
+                        </div>
+                        <!-- Section Content Block -->
+                        <div class="text-lg leading-[1.4] lg:text-[21px]">
+                            <p class="mb-7 last:mb-0">
+                                Advanced AI capabilities accessible to a broader audience,
+                                including small &amp; medium-sized businesses and individuals
+                                who may not have the resources or expertise to develop.
+                            </p>
+                            <p class="mb-7 last:mb-0">
+                                Advanced AI capabilities accessible to a broader audience,
+                                including small &amp; medium-sized businesses and individuals
+                                who may not have the resources or expertise to develop.
+                            </p>
+                      </div>
+                  </div>
+                <!-- Content Right Block -->
+            </div>
+          </div>
+          <!-- Section Container -->
+        </div>
+
+        </section>
+        <!-- Content Section 2 -->
+        <section id="section-content-2">
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="container">
+                <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                    <!-- Content Left Block -->
+                    <div class="order-2 overflow-hidden rounded-md fade-left duration-300 animation">
+                        <img src="./assets/images/content/content-image-2.jpg" alt="content-image-2" width="526" height="450" class="h-auto w-full">
+                    </div>
+                    <!-- Content Left Block -->
+                    <!-- Content Right Block -->
+                    <div class="order-1 fade-right duration-300 animation">
+                        <!-- Section Content Block -->
+                        <div class="mb-6">
+                            <h2>Providing quick deploy solutions</h2>
+                        </div>
+                        <!-- Section Content Block -->
+                        <div class="text-lg leading-[1.4] lg:text-[21px]">
+                            <p class="mb-7 last:mb-0">
+                                Our AI SaaS solutions can be quickly deployed, enabling
+                                users to start benefiting from AI capabilities without
+                                lengthy setup and development times in fast-paced
+                                industries.
+                            </p>
+                            <ul class="flex flex-col gap-y-5 font-DM-Sans font-bold text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
+                                <li class="flex items-start gap-x-3">
+                                    <div class="mt-[2.5px] h-[30px] w-[30px]">
+                                        <img src="./assets/images/content/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
+                                    </div>
+                                    Ready-to-use AI capabilities system
+                                </li>
+                                <li class="flex items-start gap-x-3">
+                                    <div class="mt-[2.5px] h-[30px] w-[30px]">
+                                        <img src="./assets/images/content/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
+                                    </div>
+                                    Users can quickly integrate AI features
+                                </li>
+                                <li class="flex items-start gap-x-3">
+                                    <div class="mt-[2.5px] h-[30px] w-[30px]">
+                                        <img src="./assets/images/content/check-circle.svg" alt="check-circle" width="30" height="30" class="h-full w-full">
+                                    </div>
+                                    Time savings translate to cost savings
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </div>
+
+        </section>
+        <!-- End Content Section  -->
+        <!-- Statistic Section -->
+         <section class="section-statistic">
+          <div class="mx-auto max-w-[1500px] px-5">
+            <div class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)] fade-up duration-300 animation">
+                <!-- Funfact Left Block -->
+                <div class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
+                    <img src="./assets/images/statistic/funfact-image.jpg" alt="funfact-image" width="721" height="784" class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full">
+                    <!-- Video Play Button -->
+                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=v_1iqtOnUMg" class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
+                        <div class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[#FE330A] hover:text-white">
+                            Play
+                            <div class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Funfact Right Block -->
+                <div class="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28">
+                    <!-- Section Content Block -->
+                    <div class="mb-8 lg:mb-16 xl:mb-6">
+                        <h2 class="text-white">AI-powered that streamline tasks</h2>
+                    </div>
+                    <!-- Section Content Block -->
+                    <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
+                        <p class="mb-7 last:mb-0">
+                            As your business grows or your AI SaaS needs change, you can
+                            easily adjust your subscription level to match those needs.
+                            This flexibility ensures that AI remains an asset.
+                        </p>
+                    </div>
+                    <div class="bg-[#FE330A] my-14 h-[1px] w-full "></div>
+                    <!-- Counter Scroll -->
+                    <ul class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left xxl:gap-x-20">
+                        <!-- Counter Items -->
+                        <li>
+                            <h3 class="text-5xl text-[#FE330A] md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]" data-module="countup">
+                                <span class="start-number" data-countup-number="92">92</span>%
+                            </h3>
+                            <span class="block text-lg font-normal text-white lg:text-[21px]">
+                                Customer service inquiries
+                            </span>
+                        </li>
+                        <!-- Counter Items -->
+                        <!-- Counter Items -->
+                        <li>
+                            <h3 class="text-5xl text-[#FE330A] md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]" data-module="countup">
+                                <span class="start-number" data-countup-number="75">75</span>%
+                            </h3>
+                            <span class="block text-lg font-normal text-white lg:text-[21px]">
+                                Using financial institutions
+                            </span>
+                        </li>
+                        <!-- Counter Items -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+         </section>
+       
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e379074c68.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
